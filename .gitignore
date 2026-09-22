@@ -21,6 +21,16 @@ env/
 .env.local
 .env.*.local
 *.env
+!.env.example
+
+# Databases & local storage
+*.sqlite
+*.sqlite3
+*.db
+
+# Logs
+*.log
+logs/
 
 # IDEs and editors
 .idea/
@@ -28,12 +38,13 @@ env/
 *.swp
 *.swo
 
-# Testing and linting caches
+# Testing, linting, and tools caches
 .pytest_cache/
 .ruff_cache/
 .mypy_cache/
 .coverage
 htmlcov/
+.cache/
 
 # Operating system files
 .DS_Store
